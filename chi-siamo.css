@@ -1,0 +1,180 @@
+/* Reset base e sfondo */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: "Segoe UI", sans-serif;
+    color: #990000;
+}
+
+/* Gradiente di sfondo su tutta la pagina */
+html {
+    height: 100%;
+    background: linear-gradient(135deg, #ff7f8a 0%, #ffe5e5 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Corpo trasparente con altezza minima 100vh */
+body {
+    min-height: 100vh;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ---------- HEADER ---------- */
+header {
+    background-color: transparent;
+    color: #990000;
+    padding: 40px 20px;
+    text-align: center;
+    border-bottom: 2px solid #990000;
+    flex-shrink: 0;
+}
+
+header h1 {
+    font-size: 2em;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.1em;
+    color: #660000;
+    margin-top: 10px;
+}
+
+/* ---------- MAIN ---------- */
+main.home {
+    max-width: 800px;
+    margin: 60px auto;
+    padding: 30px 20px;
+    background-color: rgba(255, 229, 229, 0.85);
+    box-shadow: 0 4px 12px rgba(204, 0, 0, 0.15);
+    border-left: 6px solid #cc0000;
+    text-align: center;
+    border-radius: 12px;
+    flex: 1 0 auto;
+}
+
+/* Titoli principali h2 */
+main.home h2 {
+    color: #990000;
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #cc0000;
+    padding-bottom: 8px;
+}
+
+/* Paragrafi */
+main.home p {
+    font-size: 1.1em;
+    margin-bottom: 30px;
+    line-height: 1.5;
+    color: #660000;
+}
+
+/* Lista senza pallini e margini */
+main.home ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 30px;
+    text-align: left;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Lista - singoli elementi */
+main.home ul li {
+    padding: 8px 0;
+    font-size: 1.1em;
+    color: #660000;
+}
+
+/* Bottone */
+.button {
+    display: inline-block;
+    background-color: #cc0000;
+    color: white;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 12px;
+    font-size: 1em;
+    font-weight: 600;
+    box-shadow: 0 4px 12px rgba(204, 0, 0, 0.5);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.button:hover {
+    background-color: #990000;
+    transform: scale(1.05);
+    box-shadow: 0 6px 16px rgba(153, 0, 0, 0.6);
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+    background-color: transparent;
+    color: #660000;
+    text-align: center;
+    padding: 20px;
+    margin-top: 60px;
+    font-size: 0.9em;
+    border-top: 2px solid #990000;
+    font-weight: 600;
+    flex-shrink: 0;
+}
+.contact-section {
+  text-align: center;
+  padding: 60px 20px;
+  margin-top: 60px;
+  background-color: rgba(255, 0, 0, 0.03);
+  border-radius: 16px;
+  box-shadow: 0 4px 18px rgba(255, 0, 0, 0.2);
+  backdrop-filter: blur(5px);
+}
+
+.contact-section h2 {
+  color: #ff0000;
+  font-size: 1.8em;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 3px #000000;
+}
+
+/* Pulsante Discord */
+.discord-link {
+  display: inline-block;
+  background-color: #5865F2; /* colore ufficiale Discord */
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(88, 101, 242, 0.5);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.discord-link:hover {
+  background-color: #4752C4;
+  transform: scale(1.05);
+  box-shadow: 0 6px 18px rgba(88, 101, 242, 0.7);
+}
+
+/* Pulsante Home */
+.home-button {
+  display: inline-block;
+  background-color: #cc0000;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(204, 0, 0, 0.5);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.home-button:hover {
+  background-color: #990000;
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(153, 0, 0, 0.6);
+}

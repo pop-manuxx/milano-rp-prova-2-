@@ -1,0 +1,116 @@
+/* Reset di base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Sfondo sfumato su tutta la pagina */
+html, body {
+  height: 100%;
+  font-family: "Segoe UI", sans-serif;
+  color: #990000;
+  background: linear-gradient(135deg, #ff7f8a 0%, #ffffff 100%);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  padding: 20px;
+}
+
+/* Corpo pagina */
+body {
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+header {
+  text-align: center;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #990000;
+  padding-bottom: 20px;
+  background-color: transparent;
+  flex-shrink: 0;
+}
+
+header h1 {
+  color: #990000;
+  font-size: 2.5rem;
+}
+
+header p {
+  color: #660000;
+  font-size: 1.1rem;
+  margin-top: 10px;
+}
+
+/* Sezione principale */
+main.home {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: rgba(255, 229, 229, 0.85);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(204, 0, 0, 0.2);
+  flex: 1 0 auto;
+}
+
+main.home h2 {
+  color: #cc0000;
+  font-size: 1.5rem;
+  margin-top: 25px;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #cc0000;
+  padding-bottom: 8px;
+}
+
+main.home p {
+  margin-bottom: 20px;
+  color: #660000;
+}
+
+main.home ul {
+  margin-left: 20px;
+  margin-bottom: 20px;
+  color: #660000;
+}
+
+main.home ul li {
+  padding: 5px 0;
+}
+
+/* Bottone */
+.button {
+  display: block;
+  margin: 20px auto 0 auto;
+  padding: 12px 24px;
+  background-color: #cc0000;
+  color: white;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 4px 12px rgba(204, 0, 0, 0.5);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  text-align: center;
+  width: max-content;
+}
+
+.button:hover {
+  background-color: #990000;
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(153, 0, 0, 0.6);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid #cc0000;
+  color: #660000;
+  font-size: 0.9rem;
+  font-weight: 600;
+  background-color: transparent;
+  flex-shrink: 0;
+}
